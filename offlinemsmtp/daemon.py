@@ -164,7 +164,7 @@ class Daemon:
     @staticmethod
     def run(args):
         """Run the offlinemsmtp daemon."""
-        util.notify("offlinemsmtp daemon started")
+        # util.notify("offlinemsmtp daemon started")
         # Listen on the outbox directory for new files.
         daemon = Daemon(args)
         observer = inotify.adapters.Inotify()
